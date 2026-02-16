@@ -3,4 +3,11 @@
 // ==== COLORS ====
 
 $dark: rgb(0 0 0);
+$white: rgb(255 255 255);
+$grey: rgb(125 125 125);
+$text-color-primary: $grey;
 $overlay-bg: color.scale($dark, $alpha: -70%);
+$logo-text: $white;
+
+// ==== TYPOGRAPHY ====
+$font-family-primary: 'Roboto', sans-serif;

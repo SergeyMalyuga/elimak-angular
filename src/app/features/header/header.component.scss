@@ -1,0 +1,26 @@
+@use '../../../styles/variables' as variables;
+
+.header-main {
+  color: white;
+  padding: 24px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 100;
+
+  &__link {
+    &-logo {
+      display: block;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+
+      span {
+        color: variables.$logo-text;
+      }
+    }
+  }
+}

@@ -21,6 +21,16 @@ html {
 
 body {
   margin: 0;
+  font-family: variables.$font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .visually-hidden {
