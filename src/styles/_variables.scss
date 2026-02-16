@@ -1,0 +1,6 @@
+@use 'sass:color';
+
+// ==== COLORS ====
+
+$dark: rgb(0 0 0);
+$overlay-bg: color.scale($dark, $alpha: -70%);
