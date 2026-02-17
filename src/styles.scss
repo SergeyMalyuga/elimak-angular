@@ -33,6 +33,41 @@ body {
   padding: 0 15px;
 }
 
+.interactive {
+  background-color: transparent;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid variables.$header-button-border-color;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+
+  &::before {
+    font-family: FontAwesome, sans-serif;
+    font-size: 14px;
+    color: variables.$header-button-color;
+    transition: color 0.5s ease;
+  }
+
+  &:hover {
+    background-color: variables.$header-button-hover-bg;
+    transform: scale(0.8);
+
+
+    &::before {
+      color: variables.$header-button-hover-color;
+    }
+  }
+
+  &:active {
+    background-color: variables.$header-button-active-color;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

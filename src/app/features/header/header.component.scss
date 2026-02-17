@@ -19,7 +19,7 @@
       align-items: center;
       gap: 10px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 30px;
       line-height: 32px;
       font-weight: 500;
 
@@ -34,7 +34,7 @@
       color: variables.$header-link;
       text-transform: uppercase;
       display: inline-block;
-      font-size: 12px;
+      font-size: 16px;
       line-height: 18px;
       font-weight: 300;
       letter-spacing: 2px;
@@ -49,6 +49,47 @@
         color: variables.$header-link-active;
       }
     }
+
+    &-social {
+      &::before {
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: cover;
+        background-color: variables.$link-social;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+      }
+
+      &--vk {
+        &:hover {
+          &::before {
+            background-color: variables.$vk-hover-color;
+          }
+        }
+
+        &::before {
+          content: '';
+          width: 28px;
+          height: 25px;
+          mask-image: url("../../../assets/images/vector/vk.svg");
+        }
+      }
+
+      &--telegram {
+        &:hover {
+          &::before {
+            background-color: variables.$telegram-hover-color;
+          }
+        }
+
+        &::before {
+          content: '';
+          width: 21px;
+          height: 24px;
+          mask-image: url("../../../assets/images/vector/telegram.svg");
+        }
+      }
+
+    }
   }
 
   &__list {
@@ -61,47 +102,25 @@
       display: flex;
       gap: 30px;
     }
+
+    &-social {
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__button {
-    background-color: transparent;
-    display: flex;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid variables.$header-button-border-color;
-    padding: 0;
-    width: 34px;
-    height: 34px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-
-    &::before {
-      font-family: FontAwesome, sans-serif;
-      font-size: 14px;
-      color: variables.$header-button-color;
-      transition: color 0.5s ease;
-    }
-
-    &:hover {
-      background-color: variables.$header-button-hover-bg;
-
-      &::before {
-        color: variables.$header-button-hover-color;
-      }
-    }
-
-    &:active {
-        background-color: variables.$header-button-active-color;
-    }
-
     &--social {
+      display: none;
+
       &::before {
         content: "\f127";
       }
     }
 
     &--burger {
+      display: none;
+
       &::before {
         content: "\f0c9";
       }

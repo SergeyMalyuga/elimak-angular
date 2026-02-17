@@ -7,11 +7,17 @@ $color-white: rgb(255 255 255);
 $color-grey-50: rgb(242 242 242);
 $color-grey-300: rgb(125 125 125);
 $overlay-bg: color.scale($color-black, $alpha: -70%);
+$color-blue-100: rgb(0 136 204);
+$color-blue-200: rgb(0 119 255);
+
 
 
 /* text */
 $text-color-primary: $color-grey-300;
 $text-color-logo: $color-white;
+
+/* link */
+$link-social: $color-white;
 
 // ==== COMPONENTS ====
 
@@ -24,6 +30,8 @@ $header-button-hover-color: $color-black;
 $header-button-hover-bg: $color-white;
 $header-button-active-color: color.scale($color-white, $blackness: 20%);
 $header-button-border-color: color.scale($color-grey-50, $alpha: -60%);
+$telegram-hover-color: $color-blue-100;
+$vk-hover-color: $color-blue-200;
 
 
 
