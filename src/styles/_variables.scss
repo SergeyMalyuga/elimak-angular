@@ -2,12 +2,27 @@
 
 // ==== COLORS ====
 
-$dark: rgb(0 0 0);
-$white: rgb(255 255 255);
-$grey: rgb(125 125 125);
-$text-color-primary: $grey;
-$overlay-bg: color.scale($dark, $alpha: -70%);
-$logo-text: $white;
+$color-dark: rgb(0 0 0);
+$color-white: rgb(255 255 255);
+$color-grey-50: rgb(242 242 242);
+$color-grey-300: rgb(125 125 125);
+$overlay-bg: color.scale($color-dark, $alpha: -70%);
+
+
+/* text */
+$text-color-primary: $color-grey-300;
+$text-color-logo: $color-white;
+
+// ==== COMPONENTS ====
+
+/* header */
+$header-link: $color-white;
+$header-link-hover: color.scale($color-white, $blackness: 20%);
+$header-link-active: color.scale($color-white, $blackness: 30%);
+$header-button-color: $color-white;
+$header-button-border-color: color.scale($color-grey-50, $alpha: -60%);
+
+
 
 // ==== TYPOGRAPHY ====
 $font-family-primary: 'Roboto', sans-serif;

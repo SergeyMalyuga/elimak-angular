@@ -1,6 +1,9 @@
 @use '../../../styles/variables' as variables;
 
 .header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   padding: 24px 30px;
   position: fixed;
@@ -12,15 +15,83 @@
 
   &__link {
     &-logo {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 10px;
       text-decoration: none;
       font-size: 20px;
       line-height: 32px;
       font-weight: 500;
 
       span {
-        color: variables.$logo-text;
+        color: variables.$text-color-logo;
+        text-transform: uppercase;
       }
     }
+
+    &-nav {
+      text-decoration: none;
+      color: variables.$header-link;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in, color 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        color: variables.$header-link-active;
+      }
+    }
+  }
+
+  &__list {
+    &-nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    &-actions {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid variables.$header-button-border-color;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+
+    &::before {
+      font-family: FontAwesome, sans-serif;
+      font-size: 14px;
+      color: variables.$header-button-color;
+    }
+
+    &--social {
+      &::before {
+        content: "\f127";
+      }
+    }
+
+    &--burger {
+      &::before {
+        content: "\f0c9";
+      }
+    }
+
+
   }
 }
