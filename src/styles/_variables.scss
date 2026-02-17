@@ -2,11 +2,11 @@
 
 // ==== COLORS ====
 
-$color-dark: rgb(0 0 0);
+$color-black: rgb(0 0 0);
 $color-white: rgb(255 255 255);
 $color-grey-50: rgb(242 242 242);
 $color-grey-300: rgb(125 125 125);
-$overlay-bg: color.scale($color-dark, $alpha: -70%);
+$overlay-bg: color.scale($color-black, $alpha: -70%);
 
 
 /* text */
@@ -20,6 +20,9 @@ $header-link: $color-white;
 $header-link-hover: color.scale($color-white, $blackness: 20%);
 $header-link-active: color.scale($color-white, $blackness: 30%);
 $header-button-color: $color-white;
+$header-button-hover-color: $color-black;
+$header-button-hover-bg: $color-white;
+$header-button-active-color: color.scale($color-white, $blackness: 20%);
 $header-button-border-color: color.scale($color-grey-50, $alpha: -60%);
 
 
