@@ -11,13 +11,19 @@ $color-blue-200: rgb(0 119 255);
 $overlay-bg: color.scale($color-black, $alpha: -70%);
 
 
-
 /* text */
 $text-color-primary: $color-grey-300;
+$text-color-light: $color-white;
 $text-color-logo: $color-white;
 
 /* link */
 $link-social: $color-white;
+
+/* title */
+$title-light-color: $color-white;
+
+/* subtitle */
+$subtitle-light-color: $color-white;
 
 // ==== COMPONENTS ====
 
@@ -34,6 +40,9 @@ $telegram-hover-color: $color-blue-100;
 $vk-hover-color: $color-blue-200;
 $header-nav-overlay: color.scale($color-black, $alpha: -40%);
 
+/* hero */
+$hero-link-color: $color-white;
+$hero-link-border-color: $color-white;
 
 
 // ==== TYPOGRAPHY ====
