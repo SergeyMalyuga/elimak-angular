@@ -89,6 +89,25 @@
         }
       }
 
+      &--max {
+        &::before {
+          content: '';
+          background-color: transparent;
+          width: 24px;
+          height: 24px;
+          background-image: url("../../../assets/images/vector/max.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+        &:hover {
+          &::before {
+            background-image: url("../../../assets/images/vector/max-hover.svg");
+          }
+        }
+      }
+
     }
   }
 
@@ -99,8 +118,10 @@
     }
 
     &-actions {
-      display: flex;
-      gap: 30px;
+      @media (width <= 768px) {
+        display: flex;
+        gap: 30px;
+      }
     }
 
     &-social {
@@ -127,3 +148,4 @@
     }
   }
 }
+
