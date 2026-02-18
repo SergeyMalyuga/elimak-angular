@@ -13,6 +13,15 @@
   background-color: transparent;
   z-index: 100;
 
+  &__nav {
+    @media (width <= 1370px) {
+      position: absolute;
+      width: 100%;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+
   &__link {
     &-logo {
       display: flex;
@@ -115,6 +124,10 @@
     &-nav {
       display: flex;
       gap: 30px;
+
+      @media (width <= 1370px) {
+        justify-content: center;
+      }
     }
 
     &-actions {
