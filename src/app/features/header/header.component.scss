@@ -17,8 +17,16 @@
     @media (width <= 1370px) {
       position: absolute;
       width: 100%;
+      height: min-content;
       bottom: -10px;
       left: 0;
+    }
+
+    @media (width <= 940px) {
+      top: 100%;
+      padding: 15px 0;
+      background-color: variables.$header-nav-overlay;
+      backdrop-filter: blur(5px);
     }
   }
 
@@ -128,10 +136,15 @@
       @media (width <= 1370px) {
         justify-content: center;
       }
+
+      @media (width <= 940px) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &-actions {
-      @media (width <= 768px) {
+      @media (width <= 940px) {
         display: flex;
         gap: 30px;
       }
@@ -140,21 +153,29 @@
     &-social {
       display: flex;
       gap: 30px;
+
+      @media (width <= 940px) {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
   }
 
   &__button {
-    &--social {
-      display: none;
+    display: none;
 
+    @media (width <= 940px) {
+      display: block;
+    }
+
+    &--social {
       &::before {
         content: "\f127";
       }
     }
 
     &--burger {
-      display: none;
-
       &::before {
         content: "\f0c9";
       }
