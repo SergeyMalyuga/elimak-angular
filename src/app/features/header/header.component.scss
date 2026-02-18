@@ -52,6 +52,10 @@
       span {
         color: variables.$text-color-logo;
         text-transform: uppercase;
+
+        @media (width <= 420px) {
+          font-size: 24px;
+        }
       }
     }
 
@@ -162,11 +166,40 @@
     &-social {
       display: flex;
       gap: 30px;
+      transition: transform 0.5s ease;
 
       @media (width <= 940px) {
-        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: min-content;
+        height: min-content;
+        transform: translate(-50%, -50%) scale(0);
+      }
+
+      @media (width <= 760px) {
+        left: 0;
+        top: 400%;
+        transform: translate(0) scale(0);
         flex-direction: column;
-        gap: 20px;
+      }
+
+      &--open {
+        @media (width <= 940px) {
+          transform: translate(-50%, -50%) scale(1);
+        }
+
+        @media (width <= 760px) {
+          transform: translate(0) scale(1);
+        }
+      }
+    }
+  }
+
+  &__item {
+    &-action {
+      @media (width <= 760px) {
+        position: relative;
       }
     }
   }
@@ -189,6 +222,10 @@
         content: "\f0c9";
       }
     }
+  }
+
+  @media (width <= 760px) {
+    padding: 24px 15px;
   }
 }
 

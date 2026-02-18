@@ -12,8 +12,13 @@ import {ToggleDirective} from '../../shared/directives/toggle.directive';
 })
 export class HeaderComponent {
   public isNavOpen = signal<boolean>(false);
+  public isSocialOpen = signal<boolean>(false);
 
   public toggleNav() {
     this.isNavOpen.set(!this.isNavOpen());
+  }
+
+  public toggleSocial() {
+    this.isSocialOpen.set(!this.isSocialOpen());
   }
 }
