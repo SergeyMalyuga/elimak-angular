@@ -39,7 +39,7 @@ body {
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  border: 1px solid variables.$header-button-border-color;
+  border: 1px solid variables.$button-border-color;
   padding: 0;
   width: 34px;
   height: 34px;
@@ -49,22 +49,22 @@ body {
   &::before {
     font-family: FontAwesome, sans-serif;
     font-size: 14px;
-    color: variables.$header-button-color;
+    color: variables.$button-text-color;
     transition: color 0.5s ease;
   }
 
   &:hover {
-    background-color: variables.$header-button-hover-bg;
+    background-color: variables.$button-hover-bg;
     transform: scale(0.8);
 
 
     &::before {
-      color: variables.$header-button-hover-color;
+      color: variables.$button-hover-text-color;
     }
   }
 
   &:active {
-    background-color: variables.$header-button-active-color;
+    background-color: variables.$button-active-bg;
   }
 }
 

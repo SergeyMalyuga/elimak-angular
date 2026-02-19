@@ -18,6 +18,11 @@ $text-color-logo: $color-white;
 
 /* link */
 $link-social: $color-white;
+$link-button-text-color: $color-white;
+$link-button-hover-text-color: $color-black;
+$link-button-hover-bg: color.scale($color-white, $alpha: -20%);
+$link-button-active-bg: color.scale($color-white, $blackness: 20%, $alpha: -20%);
+$link-button-border-color: color.scale($color-grey-50, $alpha: -60%);
 
 /* title */
 $title-light-color: $color-white;
@@ -31,11 +36,6 @@ $subtitle-light-color: $color-white;
 $header-link: $color-white;
 $header-link-hover: color.scale($color-white, $blackness: 20%);
 $header-link-active: color.scale($color-white, $blackness: 30%);
-$header-button-color: $color-white;
-$header-button-hover-color: $color-black;
-$header-button-hover-bg: $color-white;
-$header-button-active-color: color.scale($color-white, $blackness: 20%);
-$header-button-border-color: color.scale($color-grey-50, $alpha: -60%);
 $telegram-hover-color: $color-blue-100;
 $vk-hover-color: $color-blue-200;
 $header-nav-overlay: color.scale($color-black, $alpha: -40%);
@@ -43,6 +43,16 @@ $header-nav-overlay: color.scale($color-black, $alpha: -40%);
 /* hero */
 $hero-link-color: $color-white;
 $hero-link-border-color: $color-white;
+$hero-link-color: $color-white;
+$hero-link-border-color: $color-white;
+
+/* button */
+
+$button-text-color: $color-white;
+$button-hover-text-color: $color-black;
+$button-hover-bg: color.scale($color-white, $alpha: -20%);
+$button-active-bg: color.scale($color-white, $blackness: 20%, $alpha: -20%);
+$button-border-color: color.scale($color-grey-50, $alpha: -60%);
 
 
 // ==== TYPOGRAPHY ====
