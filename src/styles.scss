@@ -52,9 +52,8 @@ body {
   width: 34px;
   height: 34px;
   cursor: pointer;
-  transition:
-    background-color 0.5s ease,
-    transform 0.5s ease;
+  transition: background-color 0.5s ease,
+  transform 0.5s ease;
 
   &::before {
     font-family: FontAwesome, sans-serif;
@@ -105,6 +104,13 @@ body {
       line-height: 34px;
     }
   }
+
+  &-card {
+    color: variables.$title-color-dark;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 32px;
+  }
 }
 
 .subtitle {
@@ -132,6 +138,42 @@ body {
   fill: variables.$color-white;
   width: 100%;
   height: 100%;
+}
+
+.link {
+  &-card {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 50px;
+    color: variables.$link-dark;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 9px;
+      background-color: black;
+      mask-image: url("./assets/images/vector/arrow.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: cover;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(5px);
+      }
+    }
+
+  }
 }
 
 .visually-hidden {
