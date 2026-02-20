@@ -1,5 +1,86 @@
 @use '../../../styles/variables' as variables;
 
 .about {
+  .container {
+    padding-top: 145px;
+    padding-bottom: 145px;
 
+    @media (width <= 991px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 112px;
+    align-items: center;
+
+    @media (width <= 1160px) {
+      gap: 30px;
+    }
+
+    @media (width <= 991px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__wrapper {
+    &-image {
+      padding: 15px;
+      background-image: url('../../../assets/images/raster/about-bg.jpg');
+      flex-grow: 1;
+      max-width: 375px;
+      width: 100%;
+      height: min-content;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 390px;
+
+        @media (width <= 991px) {
+          height: 390px;
+        }
+
+        @media (width <= 767px) {
+          height: 280px;
+        }
+      }
+
+      @media (width <= 991px) {
+        max-width: 485px;
+      }
+    }
+
+    &-info {
+      max-width: 683px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    &-info {
+      margin-bottom: 35px;
+      order: 1;
+
+      @media (width <= 636px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__subtitle {
+    order: 0;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    &-info {
+      order: 3;
+    }
+  }
 }

@@ -1,10 +1,21 @@
 <header class="header-main" role="banner">
   <a href="/" class="header-main__link-logo">
-    <img src="./assets/images/raster/logo.png" width="56" height="61" alt="Логотип компании 'Элимак'" loading="eager">
+    <img
+      src="./assets/images/raster/logo.png"
+      width="56"
+      height="61"
+      alt="Логотип компании 'Элимак'"
+      loading="eager"
+    />
     <span aria-hidden="true">Элимак</span>
   </a>
-  <nav id="header-nav" class="header-main__nav" [class.header-main__nav--open]="isNavOpen()"
-       [attr.aria-hidden]="isNavOpen()" aria-label="Основная навигация по сайту">
+  <nav
+    id="header-nav"
+    class="header-main__nav"
+    [class.header-main__nav--open]="isNavOpen()"
+    [attr.aria-hidden]="isNavOpen()"
+    aria-label="Основная навигация по сайту"
+  >
     <ul class="header-main__list-nav">
       <li class="header-main__item-nav-link">
         <a class="header-main__link-nav" href="#">Главная</a>
@@ -22,32 +33,65 @@
         <a class="header-main__link-nav" href="#">Контакты</a>
       </li>
       <li class="header-main__item-nav-link">
-        <a class="header-main__link-nav" href="tel:+74992898812" aria-label="Позвонит нам">8 (499) 289 88 12</a>
+        <a
+          class="header-main__link-nav"
+          href="tel:+74992898812"
+          aria-label="Позвонит нам"
+          >8 (499) 289 88 12</a
+        >
       </li>
     </ul>
   </nav>
   <div class="header-main__actions">
     <ul class="header-main__list-actions">
       <li class="header-main__item-action">
-        <button appToggle (toggled)="toggleNav()" class="header-main__button header-main__button--burger interactive"
-                type="button" aria-controls="header-nav" aria-haspopup="menu"
-                [attr.aria-expanded]="isNavOpen()"></button>
+        <button
+          appToggle
+          (toggled)="toggleNav()"
+          class="header-main__button header-main__button--burger interactive"
+          type="button"
+          aria-controls="header-nav"
+          aria-haspopup="menu"
+          [attr.aria-expanded]="isNavOpen()"
+        ></button>
       </li>
       <li class="header-main__item-action">
-        <button appToggle (toggled)="toggleSocial()" class="header-main__button header-main__button--social interactive"
-                type="button" [attr.aria-expanded]="isSocialOpen()" aria-controls="header-social" aria-haspopup="true"></button>
-        <ul id="header-social" class="header-main__list-social" [class.header-main__list-social--open]="isSocialOpen()">
+        <button
+          appToggle
+          (toggled)="toggleSocial()"
+          class="header-main__button header-main__button--social interactive"
+          type="button"
+          [attr.aria-expanded]="isSocialOpen()"
+          aria-controls="header-social"
+          aria-haspopup="true"
+        ></button>
+        <ul
+          id="header-social"
+          class="header-main__list-social"
+          [class.header-main__list-social--open]="isSocialOpen()"
+        >
           <li class="header-main__item-social">
-            <a class="header-main__link-social header-main__link-social--vk interactive" aria-label="VKontakte"
-               href="#"></a>
+            <a
+              class="header-main__link-social header-main__link-social--vk interactive"
+              aria-label="VKontakte"
+              href="#"
+            ></a>
           </li>
           <li class="header-main__item-social">
-            <a class="header-main__link-social header-main__link-social--telegram interactive" aria-label="Telegram"
-               target="_blank" href="https://t.me/elimak_master"></a>
+            <a
+              class="header-main__link-social header-main__link-social--telegram interactive"
+              aria-label="Telegram"
+              target="_blank"
+              href="https://t.me/elimak_master"
+            ></a>
           </li>
           <li class="header-main__item-social">
-            <a class="header-main__link-social header-main__link-social--max interactive" aria-label="Max"
-               target="_blank" href="https://max.ru/"></a>
+            <a
+              class="header-main__link-social header-main__link-social--max interactive"
+              aria-label="Max"
+              target="_blank"
+              href="https://max.ru/"
+            ></a>
           </li>
         </ul>
       </li>

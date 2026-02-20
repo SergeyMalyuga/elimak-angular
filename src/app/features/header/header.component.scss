@@ -14,7 +14,9 @@
   z-index: 100;
 
   &__nav {
-    transition: opacity 1s ease, transform 1s ease;
+    transition:
+      opacity 1s ease,
+      transform 1s ease;
 
     @media (width <= 1370px) {
       position: absolute;
@@ -69,7 +71,9 @@
       font-weight: 300;
       letter-spacing: 2px;
       opacity: 0.7;
-      transition: opacity 0.3s ease-in, color 0.3s ease;
+      transition:
+        opacity 0.3s ease-in,
+        color 0.3s ease;
 
       &:hover {
         opacity: 1;
@@ -86,7 +90,9 @@
         mask-position: center;
         mask-size: cover;
         background-color: variables.$link-social;
-        transition: background-color 0.5s ease, transform 0.5s ease;
+        transition:
+          background-color 0.5s ease,
+          transform 0.5s ease;
       }
 
       &--vk {
@@ -100,7 +106,7 @@
           content: '';
           width: 28px;
           height: 25px;
-          mask-image: url("../../../assets/images/vector/vk.svg");
+          mask-image: url('../../../assets/images/vector/vk.svg');
         }
       }
 
@@ -115,7 +121,7 @@
           content: '';
           width: 21px;
           height: 24px;
-          mask-image: url("../../../assets/images/vector/telegram.svg");
+          mask-image: url('../../../assets/images/vector/telegram.svg');
         }
       }
 
@@ -125,7 +131,7 @@
           background-color: transparent;
           width: 24px;
           height: 24px;
-          background-image: url("../../../assets/images/vector/max.svg");
+          background-image: url('../../../assets/images/vector/max.svg');
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -133,11 +139,10 @@
 
         &:hover {
           &::before {
-            background-image: url("../../../assets/images/vector/max-hover.svg");
+            background-image: url('../../../assets/images/vector/max-hover.svg');
           }
         }
       }
-
     }
   }
 
@@ -213,13 +218,13 @@
 
     &--social {
       &::before {
-        content: "\f127";
+        content: '\f127';
       }
     }
 
     &--burger {
       &::before {
-        content: "\f0c9";
+        content: '\f0c9';
       }
     }
   }
@@ -228,4 +233,3 @@
     padding: 24px 15px;
   }
 }
-

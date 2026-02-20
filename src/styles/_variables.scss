@@ -10,7 +10,6 @@ $color-blue-100: rgb(0 136 204);
 $color-blue-200: rgb(0 119 255);
 $overlay-bg: color.scale($color-black, $alpha: -70%);
 
-
 /* text */
 $text-color-primary: $color-grey-300;
 $text-color-light: $color-white;
@@ -21,14 +20,20 @@ $link-social: $color-white;
 $link-button-text-color: $color-white;
 $link-button-hover-text-color: $color-black;
 $link-button-hover-bg: color.scale($color-white, $alpha: -20%);
-$link-button-active-bg: color.scale($color-white, $blackness: 20%, $alpha: -20%);
+$link-button-active-bg: color.scale(
+  $color-white,
+  $blackness: 20%,
+  $alpha: -20%
+);
 $link-button-border-color: color.scale($color-grey-50, $alpha: -60%);
 
 /* title */
-$title-light-color: $color-white;
+$title-color-light: $color-white;
+$title-color-dark: $color-black;
 
 /* subtitle */
-$subtitle-light-color: $color-white;
+$subtitle-color-light: $color-white;
+$subtitle-color-dark: $color-white;
 
 // ==== COMPONENTS ====
 
@@ -47,13 +52,11 @@ $hero-link-color: $color-white;
 $hero-link-border-color: $color-white;
 
 /* button */
-
 $button-text-color: $color-white;
 $button-hover-text-color: $color-black;
 $button-hover-bg: color.scale($color-white, $alpha: -20%);
 $button-active-bg: color.scale($color-white, $blackness: 20%, $alpha: -20%);
 $button-border-color: color.scale($color-grey-50, $alpha: -60%);
-
 
 // ==== TYPOGRAPHY ====
 $font-family-primary: 'Roboto', sans-serif;

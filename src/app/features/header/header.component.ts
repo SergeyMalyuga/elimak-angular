@@ -1,14 +1,12 @@
-import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
-import {ToggleDirective} from '../../shared/directives/toggle.directive';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ToggleDirective } from '../../shared/directives/toggle.directive';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    ToggleDirective
-  ],
+  imports: [ToggleDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
   public isNavOpen = signal<boolean>(false);
