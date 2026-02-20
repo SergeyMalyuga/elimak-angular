@@ -59,5 +59,9 @@ $button-hover-bg: color.scale($color-white, $alpha: -20%);
 $button-active-bg: color.scale($color-white, $blackness: 20%, $alpha: -20%);
 $button-border-color: color.scale($color-grey-50, $alpha: -60%);
 
+/* footer */
+$footer-overlay: color.scale($color-black, $alpha: -10%);
+$footer-border-content-color: color.scale($color-white, $alpha: -80%);
+
 // ==== TYPOGRAPHY ====
 $font-family-primary: 'Roboto', sans-serif;

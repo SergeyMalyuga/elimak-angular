@@ -1,5 +1,70 @@
 @use '../../../styles/variables' as variables;
 
 .footer-main {
+  position: relative;
+  background-image: url("../../../assets/images/raster/footer-bg.jpg");
+  padding: 120px 0;
+  z-index: 1;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$footer-overlay;
+    z-index: -1;
+  }
+
+  &__title {
+    &-main {
+      margin-bottom: 25px;
+      color: variables.$title-color-light;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    &--top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 33px;
+      border-bottom: 1px solid variables.$footer-border-content-color;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    display: block;
+  }
+
+  &__wrapper {
+    &-info {
+      color: variables.$text-color-primary;
+      font-size: 13px;
+      line-height: 26px;
+      max-width: 470px;
+      width: 100%;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+  }
+
+  &__address {
+    font-family: variables.$font-family-primary;
+    color: variables.$text-color-primary;
+    font-size: 13px;
+    font-style: normal;
+
+  }
 }

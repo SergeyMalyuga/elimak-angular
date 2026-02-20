@@ -42,46 +42,11 @@
   }
 
   &__link {
-    &-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      font-size: 30px;
-      line-height: 32px;
-      font-weight: 500;
-
-      span {
-        color: variables.$text-color-logo;
-        text-transform: uppercase;
-
-        @media (width <= 420px) {
-          font-size: 24px;
-        }
-      }
-    }
-
     &-nav {
-      text-decoration: none;
-      color: variables.$header-link;
       text-transform: uppercase;
       display: inline-block;
       font-size: 16px;
       line-height: 18px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      opacity: 0.7;
-      transition:
-        opacity 0.3s ease-in,
-        color 0.3s ease;
-
-      &:hover {
-        opacity: 1;
-      }
-
-      &:active {
-        color: variables.$header-link-active;
-      }
     }
 
     &-social {
