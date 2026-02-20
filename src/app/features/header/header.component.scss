@@ -48,67 +48,6 @@
       font-size: 16px;
       line-height: 18px;
     }
-
-    &-social {
-      &::before {
-        mask-repeat: no-repeat;
-        mask-position: center;
-        mask-size: cover;
-        background-color: variables.$link-social;
-        transition:
-          background-color 0.5s ease,
-          transform 0.5s ease;
-      }
-
-      &--vk {
-        &:hover {
-          &::before {
-            background-color: variables.$vk-hover-color;
-          }
-        }
-
-        &::before {
-          content: '';
-          width: 28px;
-          height: 25px;
-          mask-image: url('../../../assets/images/vector/vk.svg');
-        }
-      }
-
-      &--telegram {
-        &:hover {
-          &::before {
-            background-color: variables.$telegram-hover-color;
-          }
-        }
-
-        &::before {
-          content: '';
-          width: 21px;
-          height: 24px;
-          mask-image: url('../../../assets/images/vector/telegram.svg');
-        }
-      }
-
-      &--max {
-        &::before {
-          content: '';
-          background-color: transparent;
-          width: 24px;
-          height: 24px;
-          background-image: url('../../../assets/images/vector/max.svg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-
-        &:hover {
-          &::before {
-            background-image: url('../../../assets/images/vector/max-hover.svg');
-          }
-        }
-      }
-    }
   }
 
   &__list {
