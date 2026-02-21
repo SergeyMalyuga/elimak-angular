@@ -1,4 +1,5 @@
-import { Directive, EventEmitter, HostListener, Output } from '@angular/core';
+import {Directive, EventEmitter, HostListener, inject, Output} from '@angular/core';
+import {SocialMenuService} from '../../core/services/social-menu.service';
 
 @Directive({
   selector: '[appToggle]',

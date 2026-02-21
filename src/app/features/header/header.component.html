@@ -1,4 +1,4 @@
-<header class="header-main" role="banner">
+<header appHeaderOnScroll class="header-main" role="banner">
   <a href="/" class="header-main__link-logo link-logo">
     <img
       src="./assets/images/raster/logo.png"
@@ -12,8 +12,8 @@
   <nav
     id="header-nav"
     class="header-main__nav"
-    [class.header-main__nav--open]="isNavOpen()"
-    [attr.aria-hidden]="isNavOpen()"
+    [class.header-main__nav--open]="navigationService.isOpen()"
+    [attr.aria-hidden]="navigationService.isOpen()"
     aria-label="Основная навигация по сайту"
   >
     <ul class="header-main__list-nav">
@@ -52,23 +52,23 @@
           type="button"
           aria-controls="header-nav"
           aria-haspopup="menu"
-          [attr.aria-expanded]="isNavOpen()"
+          [attr.aria-expanded]="navigationService.isOpen()"
         ></button>
       </li>
-      <li class="header-main__item-action">
+      <li class="header-main__item-action ">
         <button
           appToggle
           (toggled)="toggleSocial()"
           class="header-main__button header-main__button--social interactive"
           type="button"
-          [attr.aria-expanded]="isSocialOpen()"
+          [attr.aria-expanded]="socialService.isOpen()"
           aria-controls="header-social"
           aria-haspopup="true"
         ></button>
         <ul
           id="header-social"
           class="header-main__list-social"
-          [class.header-main__list-social--open]="isSocialOpen()"
+          [class.header-main__list-social--open]="socialService.isOpen()"
         >
           <li class="header-main__item-social">
             <a
