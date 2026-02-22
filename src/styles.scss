@@ -110,6 +110,11 @@ body {
     font-weight: 700;
     font-size: 33px;
     line-height: 32px;
+
+    @media (width <= 991px) {
+      font-size: 26px;
+      line-height: 27px;
+    }
   }
 }
 
