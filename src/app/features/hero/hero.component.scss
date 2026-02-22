@@ -58,17 +58,6 @@
     }
   }
 
-  &__subtitle {
-    color: variables.$subtitle-color-light;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 4.5px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    order: 0;
-  }
-
   &__description {
     color: variables.$text-color-light;
     font-size: 16px;
