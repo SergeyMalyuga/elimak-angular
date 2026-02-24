@@ -1,6 +1,6 @@
 @use '../../../styles/variables' as variables;
 
-.projects {
+.directions {
   padding-bottom: 70px;
 
   &__content {
@@ -52,24 +52,24 @@
   }
 
   &__item {
-    &-project {
+    &-direction {
       &:not(:last-child) {
         margin-bottom: 60px;
       }
 
       &:nth-child(even) {
-        .projects__wrapper-info {
+        .directions__wrapper-info {
           order: 0;
         }
 
-        .projects__wrapper-image {
+        .directions__wrapper-image {
           order: 1
         }
       }
 
       @media (width <= 872px) {
         &:nth-child(even) {
-          .projects__wrapper-info, .projects__wrapper-image {
+          .directions__wrapper-info, .directions__wrapper-image {
             order: 0;
           }
         }
@@ -100,7 +100,7 @@
   }
 
   &__card {
-    &-project {
+    &-direction {
       display: flex;
       justify-content: space-between;
 
