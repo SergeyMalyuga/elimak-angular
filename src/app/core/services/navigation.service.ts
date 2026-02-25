@@ -1,7 +1,7 @@
-import {Injectable, OnDestroy, signal} from '@angular/core';
+import { Injectable, OnDestroy, signal } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NavigationService implements OnDestroy {
   public isOpen = signal<boolean>(false);

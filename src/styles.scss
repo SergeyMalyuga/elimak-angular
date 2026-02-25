@@ -52,8 +52,9 @@ body {
   width: 34px;
   height: 34px;
   cursor: pointer;
-  transition: background-color 0.5s ease,
-  transform 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    transform 0.5s ease;
 
   &::before {
     font-family: FontAwesome, sans-serif;
@@ -163,7 +164,6 @@ body {
     color: variables.$header-link-active;
   }
 
-
   &-card {
     display: flex;
     gap: 3px;
@@ -183,7 +183,7 @@ body {
       width: 30px;
       height: 9px;
       background-color: black;
-      mask-image: url("./assets/images/vector/arrow.svg");
+      mask-image: url('./assets/images/vector/arrow.svg');
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: cover;

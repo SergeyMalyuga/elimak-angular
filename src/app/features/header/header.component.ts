@@ -1,10 +1,15 @@
-import {ChangeDetectionStrategy, Component, inject, signal} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  signal,
+} from '@angular/core';
 import { ToggleDirective } from '../../shared/directives/toggle.directive';
-import {HeaderOnScrollDirective} from './directives/header-on-scroll.directive';
-import {SocialMenuService} from '../../core/services/social-menu.service';
-import {ResolutionService} from '../../core/services/resolution.service';
-import {Resolution} from '../../core/constants/const';
-import {NavigationService} from '../../core/services/navigation.service';
+import { HeaderOnScrollDirective } from './directives/header-on-scroll.directive';
+import { SocialMenuService } from '../../core/services/social-menu.service';
+import { ResolutionService } from '../../core/services/resolution.service';
+import { Resolution } from '../../core/constants/const';
+import { NavigationService } from '../../core/services/navigation.service';
 
 @Component({
   selector: 'app-header',

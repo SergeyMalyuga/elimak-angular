@@ -2,12 +2,12 @@
 
 .footer-main {
   position: relative;
-  background-image: url("../../../assets/images/raster/footer-bg.jpg");
+  background-image: url('../../../assets/images/raster/footer-bg.jpg');
   padding: 120px 0;
   z-index: 1;
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
