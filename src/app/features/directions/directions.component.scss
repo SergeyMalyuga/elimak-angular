@@ -63,13 +63,14 @@
         }
 
         .directions__wrapper-image {
-          order: 1
+          order: 1;
         }
       }
 
       @media (width <= 872px) {
         &:nth-child(even) {
-          .directions__wrapper-info, .directions__wrapper-image {
+          .directions__wrapper-info,
+          .directions__wrapper-image {
             order: 0;
           }
         }

@@ -15,8 +15,9 @@
   transition: background-color 0.5s ease;
 
   &__nav {
-    transition: opacity 1s ease,
-    transform 1s ease;
+    transition:
+      opacity 1s ease,
+      transform 1s ease;
 
     @media (width <= 1370px) {
       position: absolute;
